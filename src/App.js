@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [movieName, setMovieName] = React.useState("");
   const [movieData, setMovieData] = React.useState([]);
+  console.log("Test...");
   async function fetchData(e) {
     if (e.key === "enter" || e.type === "click") {
       const response = await fetch(
